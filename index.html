@@ -888,7 +888,7 @@ function kernel() {
    }
   }
   chain.run(); 
-  alert("Insert USB Drive and click OK after You See The Popup Notification, USB Unsupported ");
+  alert(" ⚠ Isaksak mo Yung Flash Drive At Antayin mo Lumabas Na ⚠'Unsupported USB'⚠ Tapos Pindutin mo Okay ⚠ ");
   {
    for (var i = 1; i < NUM_KQUEUES; i += 2) {
     chain.fcall(window.syscalls[6], kqueues[i]);
@@ -912,12 +912,12 @@ function kernel() {
             chain.fcall(patch_buffer, p.read8(KERNEL_BASE_PTR));
             chain.fcall(window.syscalls[73], patch_buffer, 0x4000);
             chain.run();
-            alert("Jailbreak done. Remove USB Drive from PS4 Before You Play!!");
+            alert(" ⚠ Jailbreak done. Bunutin ang Flash Drive Bago Maglaro!! ⚠");
             setTimeout(jbdone, 50);
         }
         else
         {
-            alert("failed to trigger exploit kernel heap might be corrupted, try again or reboot the console");
+            alert("Jailbreak Fail!! Restart mo ulit PS4 mo!!");
             p.write8(0, 0);
         }
  };
